@@ -77,7 +77,7 @@ export default function AddProduct() {
                 category: categoryValue
             };
             console.log(data);
-            let res = await fetch("http://localhost:3000/api/addProductData", {
+            let res = await fetch("/api/addProductData", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -126,7 +126,7 @@ export default function AddProduct() {
             })
             const fetchreceivedTag = async () => {
 
-                let res = await fetch("http://localhost:3000/api/fetchtag", {
+                let res = await fetch("/api/fetchtag", {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',

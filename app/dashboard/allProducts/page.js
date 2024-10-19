@@ -24,7 +24,7 @@ export default function AllProducts() {
 
         const fetchProduct = async () => {
             try {
-                let res = await fetch("http://localhost:3000/api/allProducts");
+                let res = await fetch("/api/allProducts");
                 const all_products = await res.json();
 
                 console.log("response from fetchdata:", all_products);
