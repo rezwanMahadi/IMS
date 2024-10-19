@@ -18,7 +18,7 @@ import { ShieldCheckIcon } from '@heroicons/react/24/outline';
 // import { useToast } from "@/components/hooks/use-toast"
 // import { Toaster } from "@/components/ui/toaster";
 let tagFetchStatus = true;
-export default function addProduct() {
+export default function AddProduct() {
     const [rfidValue, setRfidValue] = useState('');
     const [nameValue, setNameValue] = useState('');
     const [categoryValue, setCategoryValue] = useState('');
