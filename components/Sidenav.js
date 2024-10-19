@@ -27,7 +27,7 @@ export default function SideNav() {
     } else {
       router.push('/login');
     }
-  }, [router])
+  }, [router,user_name,user_email,user_tag,user_role])
 
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">

@@ -57,5 +57,5 @@ const NavLinks = React.forwardRef(() => {
     </>
   );
 })
-Loader.displayName = 'NavLinks';
+NavLinks.displayName = 'NavLinks';
 export { NavLinks }
