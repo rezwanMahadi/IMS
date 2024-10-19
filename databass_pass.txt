@@ -1,0 +1,5 @@
+name: inventory_user1
+pass: CknB8IRcsIUptTZn
+
+name: inventory_read_user
+pass: 3HZbmplzdd89X38W
