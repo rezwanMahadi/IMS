@@ -39,7 +39,7 @@ export default function CardWithForm() {
     }
     console.log(data);
     try {
-      let res = await fetch("http://localhost:3000/auth", {
+      let res = await fetch("/auth", {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
