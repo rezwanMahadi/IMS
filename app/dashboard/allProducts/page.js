@@ -26,8 +26,9 @@ export default function AllProducts() {
             try {
                 let res = await fetch("/api/allProducts");
                 const all_products = await res.json();
+                const a = JSON.parse(all_products.allProducts);
 
-                console.log("response from fetchdata:", all_products);
+                console.log("response from fetchdata:", a);
 
                 if (all_products.success === true) {
                     // clearInterval(intervalId);
@@ -41,7 +42,7 @@ export default function AllProducts() {
                         hideProgressBar: true,
                         theme: "colored",
                     });
-                    setAllProducts(all_products.allProducts); // Ensure the data is an array
+                    setAllProducts(a); // Ensure the data is an array
                 } else {
                     throw new Error("Product fetch failed!");
                 }
