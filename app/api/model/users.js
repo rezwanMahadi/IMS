@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const usersSchema = new mongoose.Schema({
     name: String,
     email: String,
-    finger_tag: Number,
+    finger_tag: String,
     role: String,
     pass: String,
 });
