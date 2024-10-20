@@ -14,8 +14,8 @@ export async function GET(request) {
         try {
             const allProducts = await mongoose.models.products.find();
             console.log("from server side:", allProducts);
-            const data = JSON.stringify(allProducts);
-            return NextResponse.json({ success: true, data });
+            // const data = JSON.stringify(allProducts);
+            return NextResponse.json({ success: true, allProducts });
         }
         catch (error) {
             console.log(error);
