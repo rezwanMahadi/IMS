@@ -14,7 +14,7 @@ export async function POST(request) {
     try {
       const userInfo = new mongoose.models.users(data);
 
-      await userInfo.save().then(() => console.log("user saved"), () => console.log("user save failed"))
+      await userInfo.save().then(() => console.log("user saved"), () => console.log("user save failed"));
 
       return NextResponse.json({ success: true, Response: 'user added' });
     }
