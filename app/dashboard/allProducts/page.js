@@ -14,7 +14,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function AllProducts() {
-    const [Products, setAllProducts] = useState([]); // Initialize as an empty array
+    const [Products, setAllProducts] = useState(''); // Initialize as an empty array
 
     useEffect(() => {
         const id = toast.loading("Loading all products", {
@@ -27,9 +27,9 @@ export default function AllProducts() {
                 let res = await fetch("/api/allProducts");
                 const all_products = await res.json();
                 console.log("data without parse: ", all_products )
-                const a = JSON.parse(all_products.allProducts);
+                // const a = JSON.parse(all_products.allProducts);
 
-                console.log("response from fetchdata:", a);
+                console.log("response from fetchdata:", all_products);
 
                 if (all_products.success === true) {
                     // clearInterval(intervalId);
