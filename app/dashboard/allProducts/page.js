@@ -42,7 +42,7 @@ export default function AllProducts() {
                         hideProgressBar: true,
                         theme: "colored",
                     });
-                    setAllProducts(a); // Ensure the data is an array
+                    setAllProducts(all_products.allProducts); // Ensure the data is an array
                 } else {
                     throw new Error("Product fetch failed!");
                 }
