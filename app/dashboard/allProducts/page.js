@@ -24,7 +24,12 @@ export default function AllProducts() {
 
         const fetchProduct = async () => {
             try {
-                let res = await fetch("/api/allProducts");
+                let res = await fetch("/api/allProducts", {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                });
                 const all_products = await res.json();
                 console.log("data without parse: ", all_products )
                 // const a = JSON.parse(all_products.allProducts);

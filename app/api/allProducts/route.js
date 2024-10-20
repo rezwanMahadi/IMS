@@ -7,13 +7,13 @@ async function connectToDatabase() {
     await mongoose.connect("mongodb+srv://inventory_user1:CknB8IRcsIUptTZn@cluster0.s2kre.mongodb.net/inventory");
 }
 
-export async function GET(request) {
+export async function POST(request) {
     connectToDatabase().then(() => console.log("db connected"));
 
-    if (request.method === 'GET') {
+    if (request.method === 'POST') {
         try {
             const allProducts = await mongoose.models.products.find();
-            console.log("from server side:", allProducts);
+            console.log("from server side:", "product fetch success");
             // const data = JSON.stringify(allProducts);
             return NextResponse.json({ success: true, allProducts });
         }
