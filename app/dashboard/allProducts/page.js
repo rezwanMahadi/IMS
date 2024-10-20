@@ -26,6 +26,7 @@ export default function AllProducts() {
             try {
                 let res = await fetch("/api/allProducts");
                 const all_products = await res.json();
+                console.log("data without parse: ", all_products )
                 const a = JSON.parse(all_products.allProducts);
 
                 console.log("response from fetchdata:", a);
