@@ -14,7 +14,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function AllProducts() {
-    const [Products, setAllProducts] = useState(''); // Initialize as an empty array
+    const [Products, setAllProducts] = useState([]); // Initialize as an empty array
 
     useEffect(() => {
         const id = toast.loading("Loading all products", {
@@ -64,7 +64,7 @@ export default function AllProducts() {
         const intervalId = setInterval(fetchProduct, 5000);
 
         return () => clearInterval(intervalId);
-    }, []);
+    }, [Products]);
 
 
     return (
