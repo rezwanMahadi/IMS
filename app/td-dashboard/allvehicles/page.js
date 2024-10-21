@@ -96,6 +96,7 @@ export default function AllProducts() {
                         <TableHead>Chassis Number</TableHead>
                         <TableHead>Latitude</TableHead>
                         <TableHead>Longitude</TableHead>
+                        <TableHead></TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
