@@ -96,7 +96,7 @@ export default function AllProducts() {
                         <TableHead>Chassis Number</TableHead>
                         <TableHead>Latitude</TableHead>
                         <TableHead>Longitude</TableHead>
-                        <TableHead></TableHead>
+                        <TableHead>Show on map</TableHead>
                     </TableRow>
                 </TableHeader>
                 <TableBody>
