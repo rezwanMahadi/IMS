@@ -23,9 +23,9 @@ export default function CardWithForm() {
   const [pass_val, setPassValue] = useState('');
   const router = useRouter();
 
-  useEffect(() => {
-    localStorage.removeItem('user');
-  }, []);
+  // useEffect(() => {
+  //   localStorage.removeItem('user');
+  // }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault()
